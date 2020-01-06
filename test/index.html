@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test copy-node-text-js</title>
+</head>
+<style>
+
+input {
+  width: 500px;
+  height: 35px;
+  line-height: 35px;
+}
+</style>
+<script src="../index.js"></script>
+<body>
+  <div id="btn">Click me  ID, 点击</div>
+  <div id="nodeId">获取节点值通过ID</div>
+  <div>-------------------------------------</div>
+  <div id="btnClass">Click me  Class, 点击</div>
+  <div class="nodeclass">获取节点值通过CLASS, CLASS1</div>
+  <div class="nodeclass">获取节点值通过CLASS, CLASS2</div>
+  <input id="VINPUT" />
+</body>
+</html>
+
+<script>
+
+var input = document.getElementById('VINPUT')
+
+document.getElementById("btn").onclick = function() {
+  _copyNodeText("#nodeId") //===》 获取节点值通过ID
+  input.value =  _copyNodeText("#nodeId")
+};
+document.getElementById("btnClass").onclick = function() {
+  _copyNodeText(".nodeclass", "|")  //===》 获取节点值通过CLASS, CLASS1|获取节点值通过CLASS, CLASS2
+  input.value =  _copyNodeText(".nodeclass", "|")
+};
+</script>

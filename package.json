@@ -1,0 +1,22 @@
+{
+  "name": "copy-node-text-js",
+  "version": "0.0.1",
+  "description": "Copy Node Text Js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["copy","node","text","js"],
+  "author": {
+    "name": "clickus",
+    "email": "861479734@qq.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Clickus/copy-node-text-js/issues"
+  },
+  "homepage": "https://github.com/Clickus/copy-node-text-js#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Clickus/copy-node-text-js.git"
+  }
+}
