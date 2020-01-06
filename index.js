@@ -52,7 +52,7 @@
    */
   function _getElementNodeText(ele, separator){
     var result = ''
-    if (ele.length>1) {
+    if (ele.length>=1) {
       var temp = []
       var sText = ''
       for (var index = 0, ilen = ele.length; index < ilen; index++) {
